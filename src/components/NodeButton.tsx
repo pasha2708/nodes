@@ -13,7 +13,7 @@ const NodeButton: FC<Props> = ({ label, onClick }) => {
       onMouseEnter={() => setButtonVisible(true)}
       onMouseLeave={() => setButtonVisible(false)}
     >
-      <span>{label}</span>
+      <span className="label">{label}</span>
       {buttonVisible && (
         <button className="button" onClick={onClick}>
           +

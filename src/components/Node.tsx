@@ -32,7 +32,7 @@ export const Node: React.FC<Props> = ({ globalConfig, setGlobalConfig, parentLab
       {Object.keys(localConfig).map((value) => (
         <div className="flex">
           <div className="node__container">
-            <SvgLine />
+            <SvgLine withArrow />
             <NodeButton label={value} onClick={() => setGlobalConfig(value)} />
             {Object.keys(localConfig[value]).length > 0 && <SvgLine />}
           </div>
